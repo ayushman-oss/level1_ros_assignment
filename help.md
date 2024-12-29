@@ -1,4 +1,4 @@
-# Guidelines and FAQs for Level 1 of the ROS2 Navigation Assignment
+# Guidelines and FAQs for Level 1: ROS2 Navigation Assignment
 
 This document is here to provide additional guidance to help you complete the assignment successfully. We’ve also included a Frequently Asked Questions (FAQ) section to address common concerns. If you still have questions, feel free to reach out—details at the end!
 
