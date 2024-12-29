@@ -7,8 +7,8 @@ This document is here to provide additional guidance to help you complete the as
 ## Guidelines
 
 - **Start Small**: Approach the assignment step by step. Begin by understanding the simulation environment before diving into the navigation workflows.
-- **Use Logs**: ROS2 provides excellent logging to debug issues. Use `ros2 topic echo`, `rviz2`, and `ros2 service list` to investigate problems.
-- **Read the `nav2` documentation:**: Specific plugins and their respective configurations are freely available on [Navigation Plugins](https://docs.nav2.org/plugins/index.html) and the 'bringup' section of the open-source [`nav2` repository](https://github.com/ros-navigation/navigation2/tree/main/nav2_bringup)
+- **Use Logs**: ROS2 provides excellent logging to debug issues. Use `ros2 topic echo`, `ros2 run tf2_tools view_frames` and `ros2 action list` to investigate problems.
+- **Read the `nav2` documentation**: Specific plugins and their respective configurations are freely available on [Navigation Plugins](https://docs.nav2.org/plugins/index.html) and the 'bringup' section of the open-source [`nav2_bringup`](https://github.com/ros-navigation/navigation2/tree/main/nav2_bringup) repository.
 - **Test Components Independently**: Before integrating everything, test map loading, localization, and navigation workflows separately. Follow the KISS principle.
 - **Document Your Approach**: Write clear notes about your configurations, challenges, and solutions. This helps us understand your thought process and makes debugging easier.
 
