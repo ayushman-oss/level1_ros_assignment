@@ -19,7 +19,7 @@ def generate_launch_description():
     description_package_name = "testbed_description"
     install_dir = get_package_prefix(description_package_name)
 
-    # Set the path to the WORLD model files. Is to find the models inside the models folder in testbed_gazebo package
+    # Set the path to the WORLD model files - Used to find the models inside the models folder in testbed_gazebo package
     gazebo_models_path = os.path.join(pkg_testbed_gazebo, 'models')
     # os.environ["GAZEBO_MODEL_PATH"] = gazebo_models_path
 
@@ -32,8 +32,6 @@ def generate_launch_description():
         os.environ['GAZEBO_PLUGIN_PATH'] = os.environ['GAZEBO_PLUGIN_PATH'] + ':' + install_dir + '/lib'
     else:
         os.environ['GAZEBO_PLUGIN_PATH'] = install_dir + '/lib'
-
-    
 
     print("GAZEBO MODELS PATH=="+str(os.environ["GAZEBO_MODEL_PATH"]))
     print("GAZEBO PLUGINS PATH=="+str(os.environ["GAZEBO_PLUGIN_PATH"]))
