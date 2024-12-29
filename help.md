@@ -1,4 +1,4 @@
-# Help and Guidelines for ROS2 Navigation Assignment
+# Guidelines and FAQs for Level 1 of the ROS2 Navigation Assignment
 
 This document is here to provide additional guidance to help you complete the assignment successfully. We’ve also included a Frequently Asked Questions (FAQ) section to address common concerns. If you still have questions, feel free to reach out—details at the end!
 
@@ -6,7 +6,6 @@ This document is here to provide additional guidance to help you complete the as
 
 ## Guidelines
 
-### General Tips
 - **Start Small**: Approach the assignment step by step. Begin by understanding the simulation environment before diving into the navigation workflows.
 - **Use Logs**: ROS2 provides excellent logging to debug issues. Use `ros2 topic echo`, `rviz2`, and `ros2 service list` to investigate problems.
 - **Read the `nav2` documentation:**: Specific plugins and their respective configurations are freely available on [Navigation Plugins](https://docs.nav2.org/plugins/index.html) and the 'bringup' section of the open-source [`nav2` repository](https://github.com/ros-navigation/navigation2/tree/main/nav2_bringup)
