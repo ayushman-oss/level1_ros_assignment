@@ -1,12 +1,12 @@
 # Level 1: ROS2 Navigation Assignment
 
 ## Overview
-At ERIC Robotics, we celebrate the modularity of code. The `nav2` stack is a highly modular, plugin-based framework, allowing users to pick, choose, and run individual plugins to achieve their applications. In this assignment, your task is to implement the navigation workflow manually creating actions and calling them step by step, with the end goal to achieve a simple autonomous robot.
+At ERIC Robotics, we value the power of modularity in code. The nav2 stack embodies this with its flexible, plugin-based framework, letting users customize and execute individual plugins for their needs. In this assignment, your challenge is to manually implement the navigation workflow step by step, creating and calling actions to achieve a functional autonomous robot.
 
 Here’s what we’re asking you to do:
-1. In this assignment, we have provided the 'Testbed-T1.0.0', a simple open-source robot developed by people here at ERIC Robotics. Your task is to develop a new ROS2 package called `testbed_navigation` to manage the navigation workflow.
+1. In this assignment, we have provided the description files for the 'Testbed-T1.0.0', a simple open-source robot developed by team here at ERIC Robotics. Your task is to develop a new ROS2 package called `testbed_navigation` to manage the navigation workflow for the robot.
 2. Manually build the required action components (i.e., using the `map_server`, `amcl`, `planner` plugins, and `bt_` plugins) to run ros2 navigation, by working directly with the respective `nav2` plugins rather than simply calling `nav2_bringup`.
-3. In `testbed_navigation`, write launch files to  load a map, perform localization, and navigate using the plugins provided by `nav2`.
+3. In `testbed_navigation`, write individual launch files to load a map, perform localization, and navigate using the plugins provided by `nav2`.
 4. Document your process so we can see how you tackled the task.
 
 This assignment gives you hands-on experience with ROS2’s navigation plugins, while showcasing your ability to design modular and effective robotics solutions.
@@ -27,6 +27,7 @@ ros_nav2_assignment/
 ├── testbed_bringup/
 │   ├── launch/            # Launch file for bringing up the robot
 │   └── maps/              # Predefined map of the test environment
+├── help.md                # Guidelines and FAQs
 └── README.md              # Instructions for the assignment
 ```
 
@@ -50,11 +51,11 @@ To get started, you’ll need:
 ### 1. Setting Up the Repository
 1. Create your workspace:
     ```bash
-    mkdir -p assignment_ws/src
+    mkdir -p ~/assignment_ws/src
     ```
 2. Clone this repository:
    ```bash
-   cd assignment_ws/src
+   cd ~/assignment_ws/src
    git clone <repository-url>
    ```
 2. Build the workspace:
@@ -81,20 +82,19 @@ To get started, you’ll need:
 
 ### 4. Map Loading
 1. Use the map provided in `testbed_bringup/maps/testbed_world.yaml`.
-2. Write a launch file in `testbed_navigation/launch/map_loader.launch.py` to load the map using the `map_server` plugin.
+2. Write actions in the launch file `testbed_navigation/launch/map_loader.launch.py` to load the map using the `map_server` plugin.
 3. Test and confirm that the map is loaded correctly in Rviz.
 
 ### 5. Localization
 1. Implement localization with the AMCL plugin:
    - Write a parameter file for AMCL in `testbed_navigation/config/amcl_params.yaml`.
-   - Create a launch file in `testbed_navigation/launch/localization.launch.py` to run AMCL.
-   - Verify that the robot can localize itself in the simulated environment.
+   - Create actions in the launch file `testbed_navigation/launch/localization.launch.py` to run AMCL.
+   - Verify that the robot can localize itself in the simulated environment using Rviz.
 
 ### 6. Navigation
 1. Set up navigation using `nav2` plugins:
    - Configure parameter files for the global and local planners, behaviour tree plugins and any other nav2 plugin you want to use, like 'collision_monitor' or 'velocity_smoother', in `testbed_navigation/config/nav2_params.yaml`.
-   - Write a launch file in `testbed_navigation/launch/navigation.launch.py` to bring up the navigation workflow.
-   - Reference the [Nav2 Documentation](https://navigation.ros.org/) for plugin details.
+   - Write actions in the launch file `testbed_navigation/launch/navigation.launch.py` to bring up the navigation workflow.
 2. Test the navigation setup by sending goals to the robot and observing its behavior.
 
 ### 7. Deliverables
@@ -118,4 +118,4 @@ We’ll be looking for:
 
 ---
 
-We’re excited to see how you approach this task. Good luck, and happy coding!
+We’re excited to see how you approach this task. Good luck, and happy coding! :)
