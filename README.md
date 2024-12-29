@@ -1,15 +1,19 @@
 # Level 1: ROS2 Navigation Assignment
 
 ## Overview
-At ERIC Robotics, we value the power of modularity in code. The nav2 stack embodies this with its flexible, plugin-based framework, letting users customize and execute individual plugins for their needs. In this assignment, your challenge is to manually implement the navigation workflow step by step, creating and calling actions to achieve a functional autonomous robot.
+At ERIC Robotics, we’re big believers in building software with modularity. The nav2 stack reflects this perfectly with flexible, plugin-based framework, allowing you to pick and choose which pieces you need and run them independently. In this assignment, you’ll walk through the navigation workflow step by step—manually creating and calling actions—to bring an autonomous robot to life.
 
-Here’s what we’re asking you to do:
-1. In this assignment, we have provided the description files for the 'Testbed-T1.0.0', a simple open-source robot developed by team here at ERIC Robotics. Your task is to develop a new ROS2 package called `testbed_navigation` to manage the navigation workflow for the robot.
-2. Manually build the required action components (i.e., using the `map_server`, `amcl`, `planner` plugins, and `bt_` plugins) to run ros2 navigation, by working directly with the respective `nav2` plugins rather than simply calling `nav2_bringup`.
-3. In `testbed_navigation`, write individual launch files to load a map, perform localization, and navigate using the plugins provided by `nav2`.
+**Here’s what to do:**
+1. We have shared some starter code for the 'Testbed-T1.0.0', a simple open-source robot developed by the team here at ERIC Robotics. Your task is to develop a new ROS2 package called `testbed_navigation` to manage the navigation workflow for this robot.
+2. However, rather than simply calling `nav2_bringup`, in this assignment you will manually build the required action components (i.e., using the `map_server`, `amcl`, `planner` plugins, and `bt_` plugins) to run ros2 navigation, by working directly with the respective `nav2` plugins.
+3. i.e., In the `testbed_navigation` package, write individual launch files to load a map, perform localization, and navigate using the plugins provided by `nav2`.
 4. Document your process so we can see how you tackled the task.
 
 This assignment gives you hands-on experience with ROS2’s navigation plugins, while showcasing your ability to design modular and effective robotics solutions.
+
+### Deadline & submissions
+1. Four days (96 hrs) from the moment you accept the assignment.
+2. To submit your code, simply commit and push to your GitHub repository online. You can commit any number of times before your deadline.
 
 ## Repository Structure
 
@@ -33,14 +37,14 @@ ros_nav2_assignment/
 
 ## Assignment Objective
 Your goals are to:
-1. Learn how to configure and use ROS2 `nav2` plugins independently.
-2. Set up manual localization and navigation in a simulated environment.
-3. Develop and implement the `testbed_navigation` package to handle these workflows.
+1. Learn how to configure and use ROS2 `nav2` plugins in independent files.
+2. Set up manual map loading and localization for the given simulation environment.
+3. Implement the required navigation plugins to handle robot navigation in the `testbed_navigation` package. Only basic navigational functionality is expected in this assignment, so choose your plugins accordingly.
 
 ## Requirements
 
 To get started, you’ll need:
-- ROS2 Humble installed. (Install from [Humble Installation](https://docs.ros.org/en/humble/Installation.html)) (You will need Ubuntu 22.04/Windows 10 for this.)
+- ROS2 Humble installed. (Install from [Humble Installation](https://docs.ros.org/en/humble/Installation.html)) (You will need Ubuntu 22.04/Windows 10 for this. More in the help section.)
 - Gazebo simulator (version 11.10.2 is compatible with ROS2 Humble) (Install from [Gazebo Installation](https://classic.gazebosim.org/tutorials?tut=install_ubuntu)) and Rviz simulator.
 - Basic to intermediate knowledge of ROS2 navigation concepts.
 - Familiarity with creating and managing ROS2 packages, actions, and parameter files.
@@ -114,7 +118,7 @@ We’ll be looking for:
 ## Notes
 - You’re welcome to modify the robot description or simulation setup to better suit your implementation.
 - Thorough testing is encouraged to ensure everything works as expected.
-- If you have questions, don’t hesitate to reach out for clarification during the assignment period.
+- If you have questions, check out the help section and don’t hesitate to reach out to us.
 
 ---
 
