@@ -119,7 +119,7 @@ We’ll be looking for:
 - You’re welcome to modify the robot description or simulation setup to better suit your implementation.
 - Thorough testing is encouraged to ensure everything works as expected.
 - If you have questions, check out the help section and don’t hesitate to reach out to us.
-
+- Lastly, we encourage you to share your code for review—even if it’s still a work in progress.
 ---
 
 We’re excited to see how you approach this task. Good luck, and happy coding! :)
