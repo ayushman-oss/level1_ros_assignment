@@ -28,7 +28,7 @@ install(
   DIRECTORY
     launch
   DESTINATION
-    share/${PROJECT_NAME}/
+    share/${PROJECT_NAME}_bug/
 )
 
 ament_package()
